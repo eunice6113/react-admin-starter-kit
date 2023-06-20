@@ -1,0 +1,110 @@
+/* comment 댓글 */
+.commentWrap .title{
+  display: flex;
+  align-items: flex-end;
+  color: var(--brand-primary);
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.commentWrap .title .titleTxt {
+  margin-left: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--brand-primary);
+}
+.commentWrap .title .total{
+  color: gray;
+  font-size: 13px;
+  margin-left: 3px;
+  font-weight: 500;
+}
+.commentWrap .title span{
+  color: gray;
+  font-size: 13px;
+}
+.comment{
+  position: relative;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background: #F7F8F9;
+  border-radius: 10px;
+  padding: 12px 15px 12px 20px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  white-space: break-spaces;
+  word-break: break-all;
+}
+
+.comment .commentContents{
+  display: flex;flex-direction: column;flex: 1;
+}
+.comment .content{
+  color:var(--global-text-color);
+  font-size: 13px;
+}
+.comment .date{
+  color:#64748B;
+  font-size: 13px;
+}
+.comment .iconBtn .p-button-icon {
+  color: var(--brand-brand-gray);
+  font-size: 23px;
+}
+.comment .iconBtn .p-button-icon:hover{
+  color: var(--brand-primary);
+}
+.commentWrap .more {
+  background: transparent !important;
+  color: var(--brand-primary) !important;
+}
+.profile {
+  background-color: #fff;
+  border-radius: 4px;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #E6E6E6;
+}
+ .profile i {
+  color:#333;
+}
+.profileName{
+  color:#64748B;
+  font-size: 14px;
+  font-weight: 500;
+}
+body.theme-dark .comment{
+  background-color: var(--dialog-background-color);
+}
+body.theme-dark .profileName{
+  color:#fff;
+}
+body.theme-dark .comment .date{
+  color:#e6e6e6;
+}
+.comment.myComment{
+  background:#f2f9ff;
+}  
+.commentRegist textarea {
+  overflow-y: auto;
+}
+
+.comment.myComment::before {
+  content: '';
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 100;
+  width: 6px;
+  height: 100%;
+  border-left: 7px solid var(--brand-primary);
+}
+
+
+.comment.myComment .iconBtn {
+  padding: 0 5px;
+}

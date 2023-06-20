@@ -1,0 +1,9 @@
+.loadingBar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.loadingBar img {
+    width:60px
+}

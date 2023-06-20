@@ -1,0 +1,112 @@
+
+
+.mainMenu {
+    background-color: #E7EAEE;
+}
+.mainMenu i {
+    color: #64748B;
+}
+
+.cldLnb {
+    padding: 10px;
+    width: 220px !important;
+    /* height: 100vh; */
+    
+}
+.cldLnb .p-panelmenu-header.p-highlight > a {
+    border-radius: 4px !important;
+    background-color: #E7EAEE;
+    font-weight: 500;
+}
+.cldLnb .p-menuitem {
+    margin-bottom: 5px;
+}
+.cldLnb .p-menuitem:last-child {
+    margin-bottom: 0;
+}
+.cldLnb .p-panelmenu-content {
+    position: relative;
+    border-top: 0 none;
+    border-right: 0 none;
+    border-bottom: 0 none;
+    /* border-left: 1px solid #E7EAEE; */
+    border-left: 1px solid var(--global-border-color);
+    border-radius: 0;
+    padding-left: 10px;
+}
+
+.cldLnb .p-panelmenu-header > a {
+    padding: 10px !important;
+    font-size: 16px;
+    border: none;
+    background: none;
+}
+
+.cldLnb .p-menuitem-text {
+    font-size: 13px;
+    /* font-weight: 500; */
+}
+
+.cldLnb .pi-chevron-down,
+.cldLnb .pi-chevron-right {
+    font-size: 10px;
+}
+
+.cldLnb .p-panelmenu-content .p-menuitem .p-menuitem-link:not(.p-disabled):hover {
+    background: #f4f4f5;
+    font-weight: 500;
+    border-radius: var(--borderRadius-sm) !important;
+}
+.cldLnb .p-panelmenu-content .p-menuitem .p-menuitem-link {
+    padding: 0.6rem 0.4rem !important;
+}
+body.theme-dark .p-panelmenu .p-panelmenu-content .p-menuitem .p-menuitem-link .p-menuitem-text{
+    color: #fff ;
+}
+
+.cldLnb .selected a {
+    /* color: var(--brand-primary) !important; */
+    background-color: #E7EAEE;
+    border-radius: var(--borderRadius-sm) !important;
+}
+body.theme-dark .cldLnb .selected a {
+    background-color: var(--dialog-background-color);
+}
+
+/**
+.cldLnb .p-panelmenu-header > a {
+    border: none;
+    background: none;
+}
+*/
+
+/**
+.cldLnb .p-panelmenu-header.p-highlight > a {
+    background-color: #E7EAEE;
+    font-weight: 500;
+}
+*/
+
+.cldLnb .p-panelmenu-header.p-highlight .p-menuitem-text {
+    font-weight: 500;
+}
+
+.p-menuitem.selected .p-menuitem-text {
+    font-weight: 500;
+}
+
+.cldLnb .p-panelmenu-header .p-menuitem-text {
+    font-weight: 500;
+}
+
+body.theme-dark .cldLnb .p-panelmenu-header.p-highlight > a {
+    background-color:var(--dialog-background-color);
+}
+
+.cldLnb .p-toggleable-content {
+    margin-left: 15px;
+}
+
+.cldLnb .p-panelmenu-header-link {
+    height: 40px;
+}

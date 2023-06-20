@@ -1,0 +1,144 @@
+body.theme-dark .main {
+    background-color: #333;
+}
+
+body.theme-light .main {
+    background-color: #f4f4f4;
+    height: 100%;
+}
+
+.main .card {
+    position: relative;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    border: 1px solid var(--global-border-color);
+    box-shadow: 0px 4px 8px -2px rgba(16, 24, 40, 0.1), 0px 2px 4px -2px rgba(16, 24, 40, 0.06);
+    border-radius: var(--borderRadius-sm);
+    background-color: var(--dialog-background-color);
+}
+
+.main .blueBox {
+    background: #E8F1FF;
+    text-align: center;
+    border-radius: var(--borderRadius-sm);
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main .blueBox:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.main .blueBox > p {
+    font-size: 12px;
+    color: #333;
+    /* color: var(--global-text-color); */
+}
+
+.main .blueBox h2 {
+    font-size: 20px;
+    color: var(--brand-primary)
+}
+
+.main .card.dataCard {
+    padding: 7px 15px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.main .num.underline {
+    border-bottom: 1px solid var(--brand-primary);
+}
+
+.main .card.dataCard .data {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 12px;
+}
+
+.main .card .listTable {
+    width: 100%;
+}
+
+.main .card .listTable th {
+    text-align: center;
+    background-color: var( --table-header-background-color);
+    font-weight: 600;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.main .card .data .num {
+    color: var(--brand-primary);
+    font-weight: 800;
+    font-size: 24px;
+
+}
+
+.main .card .listTable td {
+    font-size: 14px;
+    color: var(--global-text-color);
+    padding: 5px 10px;
+}
+
+.main .card .listTable td:last-child {
+    text-align: center;
+}
+
+.main .card .titleArea {
+    display: flex;
+    align-items: center;
+    color: var(--global-text-color);
+    font-weight: 500;
+}
+
+.main .card .titleArea > i.pi-angle-right {
+    cursor: pointer;
+}
+
+.main .card .titleArea > a {
+    color: var(--global-text-color);
+    font-weight: 500;
+}
+
+.main .card .titleArea .tag {
+    margin-left: auto;
+}
+
+.main .labelWrap .p-chip{
+    height: 25px;
+    font-size: 13px;
+    font-weight: 500;
+    margin-right: 8px;
+}
+
+.main .tag {
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.main .tag-update{
+     background: #FFE5E8;
+     color:#D20319;
+}
+
+.main .tag-info{
+    background: #E8F1FF;
+    color:#0250EC;
+}
+
+.main .tag-new{
+    background: #FEE598;
+    color:#56481E;
+}
+

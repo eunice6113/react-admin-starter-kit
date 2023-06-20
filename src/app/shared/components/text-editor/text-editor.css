@@ -1,0 +1,29 @@
+/* image 버튼 숨김 */
+.ql-snow.ql-toolbar button.ql-image {
+    display: none;
+}
+/* link 버튼 숨김 */
+.ql-snow.ql-toolbar button.ql-link {
+    display: none;
+}
+
+.p-editor-container {
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.p-editor-container.p-invalid {
+    border: 1px solid red;
+}
+
+.ql-size {
+    text-align: center;
+}
+
+.ql-container * {
+    font-weight: normal;
+}
+
+.ql-size .ql-picker-options {
+    min-width: 160px;
+}

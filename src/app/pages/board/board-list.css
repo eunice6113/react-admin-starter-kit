@@ -1,0 +1,8 @@
+.p-datatable .p-datatable-tbody > tr > td:nth-child(2) {
+    color: var(--brand-primary)
+}
+
+.p-datatable .p-datatable-tbody > tr.important-notice td {
+    background: var(--table-selected-background-color) !important;
+    font-weight: 500;
+}

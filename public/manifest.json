@@ -1,0 +1,6 @@
+{
+  "short_name": "icp-clp-front-admin",
+  "name": "icp-clp-front-admin",
+  "start_url": "/",
+  "display": "standalone"
+}
