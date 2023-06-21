@@ -45,7 +45,7 @@ export const BasePage: React.FC<IProps> = ({className, children}) => {
 
     React.useEffect(() => {
         const htmlTitle = document.querySelector('title')
-        htmlTitle.innerHTML = pageTitle + ' :: 클라우드 포탈 관리자'
+        htmlTitle.innerHTML = pageTitle + ' :: React Starter Kit'
         
         if(pageTitle != ''){
             //datatable에 동적으로 caption, scope 추가
