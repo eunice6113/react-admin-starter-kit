@@ -29,7 +29,7 @@ if(process.env.NODE_ENV === 'production') {
     }, false);
 
     document.addEventListener('keydown', function (e:any) {
-      if (e.keyCode == 123) { //F12키 막음
+    if (e.keyCode == 123) { //F12키 막음
           disabledEvent(e);
       } 
     }, false);
@@ -55,10 +55,10 @@ const rendering = () => {
     // strict mode 를 키면 dev server 에서는 2번 렌더링 된다
     //<React.StrictMode>
     <Provider store={store}>
-    <BrowserRouter>
-      <App /> 
-    </BrowserRouter>
-  </Provider>
+      <BrowserRouter>
+        <App /> 
+      </BrowserRouter>
+    </Provider>
   //</React.StrictMode>
   )
 }
