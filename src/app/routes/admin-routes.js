@@ -191,12 +191,12 @@ const adminRoutes = (isAuthenicated) => [
         name: 'Main', 
         element: <Main />
       },
-      { path: 'ntc',
-        name: '공지사항 관리',
+      { path: 'board',
+        name: '게시판 관리',
         children: [
-          {path: 'list', name:'공지사항 관리', state: {name:'hello'}, element: <BoardList />},
-          {path: ':id', name:'공지사항 상세/수정', element: <BoradDetail />},
-          {path: 'register', name:'공지사항 등록', element: <BoardRegister />},
+          {path: 'list', name:'게시판 조회', state: {name:'hello'}, element: <BoardList />},
+          {path: ':id', name:'게시판 상세/수정', element: <BoradDetail />},
+          {path: 'register', name:'게시판 등록', element: <BoardRegister />},
         ],
       },
     ]

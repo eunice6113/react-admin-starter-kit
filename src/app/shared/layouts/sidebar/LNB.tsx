@@ -18,6 +18,23 @@ const LNB: React.FC<IProps> = ({open}) => {
 
     const items = [
         {
+            label:'Board',
+            visible: true,
+            expanded: true,
+            items:[
+                {
+                    label:'Board List',
+                    url: '/board/list',
+                    className: getClsName('/board/list')
+                },
+                {
+                    label:'Board Register',
+                    url: '/board/register',
+                    className: getClsName('/board/register')
+                },
+            ]
+        },
+        {
             label:'UI',
             visible: true,
             expanded: true,
@@ -96,6 +113,6 @@ const LNB: React.FC<IProps> = ({open}) => {
         }
     ];
 
-    return <PanelMenu className={`cldLnb navi ${open ? 'open':'close'}`} model={items} />
+    return <PanelMenu className={`cldLnb navi ${open ? 'open':'close'}`} model={items} multiple />
 }
 export default LNB;

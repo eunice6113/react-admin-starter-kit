@@ -57,7 +57,7 @@ const TableListGuide: React.FC = () => {
     
     //신규 등록 버튼
     const register = (event:any) => {
-        // goPage(`/stm/ntc/register`);
+        // goPage(`/board/register`);
     }
 
     const goDetail = ( e:any ) => {

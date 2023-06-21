@@ -157,7 +157,7 @@ const BoardList: React.FC = () => {
     
     //신규 등록 버튼
     const register = (event:any) => {
-        goPage(`/stm/ntc/register`);
+        goPage(`/board/register`);
     }
 
     const goDetail = ( e:any ) => {
@@ -165,7 +165,7 @@ const BoardList: React.FC = () => {
         //검색조건 set >> 리덕스의 store 에 저장
         dispatch( storeSearchParam(param) )
 
-        goPage(`/stm/ntc/${ e.data.no}`);
+        goPage(`/board/${ e.data.no}`);
     }
 
     const searchKeyDown = (e) => {

@@ -121,7 +121,7 @@ const BoardRegister:React.FC = () => {
                         className: 'noHeader oneButton',
                         acceptLabel: '확인',
                         accept: () => {
-                            goPage('/stm/ntc/list');
+                            goPage('/board/list');
                         },
                     })
                 }
@@ -162,17 +162,17 @@ const BoardRegister:React.FC = () => {
                 message: '등록/수정 내용이 있습니다.\n목록으로 이동 시 내용이 삭제됩니다.\n이동하시겠습니까?',
                 className: 'noHeader',
                 accept: ()=> { 
-                    goPage('/stm/ntc/list')
+                    goPage('/board/list')
                 },
                 reject: () => { }
             })
         }else{
-            goPage('/stm/ntc/list');
+            goPage('/board/list');
         } 
    }
 
     const cancel = () => {
-        goPage('/stm/ntc/list');
+        goPage('/board/list');
     }
     const iff = (condition, then, otherwise) => condition? then : otherwise;
    

@@ -173,7 +173,7 @@ const BoradDetail:React.FC = () => {
                         className: 'noHeader oneButton',
                         accept: () => {
                             setMode('view')
-                            goPage(`/stm/ntc/${paramId}`);
+                            goPage(`/board/${paramId}`);
                         },
                     })
                 }
@@ -200,7 +200,7 @@ const BoradDetail:React.FC = () => {
 
      //수정 버튼
      const goList = () => {
-        goPage('/stm/ntc/list');
+        goPage('/board/list');
     }
 
     //수정 버튼
@@ -222,7 +222,7 @@ const BoradDetail:React.FC = () => {
                         message: '공지사항이 삭제되었습니다.',
                         className: 'noHeader oneButton',
                         acceptLabel: '확인',
-                        accept: () => {goPage('/stm/ntc/list');},
+                        accept: () => {goPage('/board/list');},
                     })
                     
                 }).catch((error) => console.error('rejected', error))
